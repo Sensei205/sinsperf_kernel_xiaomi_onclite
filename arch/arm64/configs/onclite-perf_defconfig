@@ -2772,7 +2772,6 @@ CONFIG_QCOM_ADRENO_DEFAULT_GOVERNOR="msm-adreno-tz"
 CONFIG_QCOM_KGSL_IOMMU=y
 # CONFIG_DRM is not set
 # CONFIG_DRM_DP_CEC is not set
-
 #
 # ACP (Audio CoProcessor) Configuration
 #
@@ -2819,6 +2818,7 @@ CONFIG_FB_MSM=y
 # CONFIG_FB_SIMPLE is not set
 # CONFIG_MSM_DBA is not set
 CONFIG_FB_MSM_MDSS_COMMON=y
+CONFIG_FB_MSM_MDSS_KCAL_CTRL=y
 # CONFIG_FB_MSM_MDP is not set
 CONFIG_FB_MSM_MDSS=y
 # CONFIG_FB_MSM_MDP_NONE is not set
