@@ -15,6 +15,10 @@ NAME = Roaring Lionus
 # o Look for make include files relative to root of kernel src
 MAKEFLAGS += -rR --include-dir=$(CURDIR)
 
+ifeq ($(cc-name),clang)
+KBUILD_CFLAGS += -O3 -march=armv8-a -mcpu=cortex-a53 -mtune=cortex-a53
+endif
+
 # Avoid funny character set dependencies
 unexport LC_ALL
 LC_COLLATE=C
