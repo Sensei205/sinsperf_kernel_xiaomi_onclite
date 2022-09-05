@@ -32,6 +32,7 @@ obj-$(CONFIG_SENSORS_TSL2550)	+= tsl2550.o
 obj-$(CONFIG_DS1682)		+= ds1682.o
 obj-$(CONFIG_TI_DAC7512)	+= ti_dac7512.o
 obj-$(CONFIG_C2PORT)		+= c2port/
+obj-$(CONFIG_KPROFILES)		+= kprofiles/
 obj-$(CONFIG_HMC6352)		+= hmc6352.o
 obj-y				+= eeprom/
 obj-y				+= cb710/
@@ -88,3 +89,4 @@ $(obj)/lkdtm_rodata_objcopy.o: $(obj)/lkdtm_rodata.o FORCE
 
 obj-$(CONFIG_SIMTRAY_STATUS) += simtray.o
 obj-$(CONFIG_OKL4_LINK_SHBUF)    += okl4-link-shbuf.o
+
